@@ -1,4 +1,5 @@
 <template>
+  <!-- template은 다 자바스크립트로 변함 -->
   <div class="card">
     <div class="card-header">
       HelloWorld
