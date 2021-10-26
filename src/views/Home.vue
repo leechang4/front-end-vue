@@ -1,18 +1,21 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="../assets/logo.png" />
+    <!--여기에 부착하려면 3-->
+    <HelloWorld />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+// HelloWorld(변수임 내 맘대로 지정) 컴포넌트를 쓸려고 임폴트 해주고 1
+import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
+  // 컴포넌트에서 설정해줌 2
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+  },
+};
 </script>
