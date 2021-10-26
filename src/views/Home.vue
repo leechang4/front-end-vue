@@ -1,8 +1,15 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <!--여기에 부착하려면 3-->
-    <HelloWorld />
+  <div class="card">
+    <div class="card-header">
+      Home
+    </div>
+    <div class="card-body">
+      <div class="home">
+        <img alt="Vue logo" src="../assets/logo.png" />
+        <!--여기에 부착하려면 3-->
+        <HelloWorld />
+      </div>
+    </div>
   </div>
 </template>
 
