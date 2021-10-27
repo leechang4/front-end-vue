@@ -14,6 +14,7 @@
           <div class=" h-100 d-flex flex-column">
             <div class="flex-grow-1 overflow-auto pr-3" style="height:0px">
               <router-view />
+              <!--//화면을 바꿀목적으로 씀 -->
             </div>
           </div>
         </div>
