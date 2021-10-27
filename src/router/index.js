@@ -48,7 +48,7 @@ const routes = [
     path: "/menu01/exam04view",
     component: () => import(/* webpackChunkName: "menu01" */ "../views/menu01/Exam04View"), //이런경우는 잘 없음 알아두기만 하자
     children: [
-      // 중첩된거를 쓸려면 칠드런을 만들어줘야함
+      // 중첩된거를 쓸려면 children 만들어줘야함
       {
         path: "",
         components: {
@@ -84,6 +84,15 @@ const routes = [
       kind: route.query.kind,
       color: route.query.color,
     }),
+  },
+  {
+    path: "/menu02/exam01Expressions",
+    component: () => import(/* webpackChunkName: "menu02" */ "../views/menu02/Exam01Expressions"),
+  },
+
+  {
+    path: "/menu02/exam02Directives",
+    component: () => import(/* webpackChunkName: "menu02" */ "../views/menu02/Exam02Directives"),
   },
 ];
 
