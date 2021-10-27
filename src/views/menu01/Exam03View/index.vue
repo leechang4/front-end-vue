@@ -29,7 +29,7 @@
 <script>
 export default {
   // 컴포넌트의 대표이름(devtools에 나오는 이름)
-  name: "",
+  name: "Exam03View",
   // 추가하고 싶은 컴포넌트를 등록 얘는 있어도 되고 없어도 됌
   components: {},
   // 컴포넌트에서 이용하는 데이터 정의

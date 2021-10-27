@@ -20,6 +20,9 @@
       <router-link to="/menu01/exam04view" class="nav-link text-warning"
         >이름이 있는 뷰</router-link
       >
+      <router-link to="/menu01/exam05view" class="nav-link text-warning"
+        >URL 데이터 전달</router-link
+      >
     </li>
   </ul>
 </template>

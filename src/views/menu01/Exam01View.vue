@@ -2,7 +2,7 @@
 <template>
   <div class="card">
     <div class="card-header">
-      Exam01View
+      <span class="title">Exam01View</span>
     </div>
     <div class="card-body">
       <h6>선언적 방식 화면 이동</h6>
@@ -38,4 +38,8 @@ export default {
 </script>
 
 <!-- 컴포넌트 스타일 정의 -->
-<style scoped></style>
+<style scoped>
+.title {
+  color: green;
+}
+</style>
