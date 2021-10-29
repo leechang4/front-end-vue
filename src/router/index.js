@@ -81,7 +81,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "menu01" */ "../views/menu01/Exam08View"),
     //괄호를 붙이는게 리턴 값임
     props: route => ({
-      kind: route.query.kind,
+      kind: route.query.kind, // 라우트는 화면이 이동할때 시작된다.
       color: route.query.color,
     }),
   },
@@ -93,6 +93,24 @@ const routes = [
   {
     path: "/menu02/exam02Directives",
     component: () => import(/* webpackChunkName: "menu02" */ "../views/menu02/Exam02Directives"),
+  },
+  {
+    path: "/menu02/exam03AttrBinding",
+    component: () => import(/* webpackChunkName: "menu02" */ "../views/menu02/Exam03AttrBinding"),
+  },
+  {
+    path: "/menu02/exam04formbinding",
+    component: () => import(/* webpackChunkName: "menu02" */ "../views/menu02/Exam04FormBinding"),
+  },
+  {
+    path: "/menu02/exam05forrepeatbinding",
+    component: () =>
+      import(/* webpackChunkName: "menu02" */ "../views/menu02/Exam05ForRepeatBinding"),
+  },
+  {
+    path: "/menu02/exam06computedbinding",
+    component: () =>
+      import(/* webpackChunkName: "menu02" */ "../views/menu02/Exam06ComputedBinding"),
   },
 ];
 

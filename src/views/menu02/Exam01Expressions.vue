@@ -9,6 +9,7 @@
       <p>번호: {{ no }}</p>
       <p>이름: {{ name }}</p>
       <p>회사: {{ company }}</p>
+      <p>가격: {{ price }}</p>
       <p>가격: {{ getPrice() }}</p>
       <p>판매여부: {{ sale ? "판매" : "품절" }}</p>
       <button class="btn btn-info btn-sm mt-2" @click="changeDate">변경</button>
@@ -23,7 +24,7 @@ export default {
   // 추가하고 싶은 컴포넌트를 등록 얘는 있어도 되고 없어도 됌
   components: {},
   // 컴포넌트에서 이용하는 데이터 정의
-  data: function() {
+  data() {
     return {
       no: 1,
       name: "미니백",
