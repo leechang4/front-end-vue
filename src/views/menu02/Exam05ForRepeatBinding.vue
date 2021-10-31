@@ -45,6 +45,8 @@
 </template>
 
 <script>
+import boardData from "@/data/boardData";
+import photoData from "@/data/photoData";
 export default {
   // 컴포넌트의 대표이름(devtools에 나오는 이름)
   name: "Exam05ForRepeatBinding",
@@ -53,19 +55,8 @@ export default {
   // 컴포넌트에서 이용하는 데이터 정의
   data() {
     return {
-      photos: ["photo1.jpg", "photo2.jpg", "photo3.jpg"],
-      boards: [
-        { bno: 1, btitle: "제목1", bwriter: "글쓴이1", bdate: "2021-08-07" },
-        { bno: 2, btitle: "제목2", bwriter: "글쓴이2", bdate: "2021-08-08" },
-        { bno: 3, btitle: "제목3", bwriter: "글쓴이3", bdate: "2021-08-09" },
-      ],
-      board: {
-        bno: 4,
-        btitle: "제목4",
-        bcontent: "내용4",
-        bwriter: "글쓴이4",
-        bdate: "2021-08-10",
-      },
+      boards: boardData.boards,
+      photos: photoData.photos,
     };
   },
   // 컴포넌트 메서드 정의

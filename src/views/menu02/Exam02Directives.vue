@@ -7,7 +7,7 @@
     <div class="card-body">
       <!-- 데이터 바인딩 -->
       <div>
-        <img src="@/assets/photos/photo1.jpg" height="100" />
+        <img class="mr-2" :src="require(`@/assets/photos/photo1.jpg`)" height="100" />
         <img v-bind:src="require(`@/assets/photos/${photoFileName}`)" height="100" />
       </div>
       <hr />
