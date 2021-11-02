@@ -10,8 +10,8 @@
         @child-event-1="handleChildEvent1"
         @child-event-2="handleChildEvent2"
         :counter="counter"
-        @counter-increment="handleCounteeIncrement"
-        @counter-decrement="handleCounteeDecrement"
+        @counter-increment="handleCountIncrement"
+        @counter-decrement="handleCountDecrement"
       />
     </div>
   </div>
@@ -20,31 +20,31 @@
 <script>
 import Child from "./Child.vue";
 export default {
-  // 컴포넌트의 대표이름(devtools에 나오는 이름)
+  //컴포넌트의 대표이름(devtools에 나오는 이름)
   name: "Exam02EventEmit",
-  // 추가하고 싶은 컴포넌트를 등록 얘는 있어도 되고 없어도 됌
+  //추가하고 싶은 컴포넌트를 등록
   components: {
     Child,
   },
-  // 컴포넌트에서 이용하는 데이터 정의
+  //컴포넌트에서 사용하는 데이터를 정의
   data() {
     return {
       counter: 0,
     };
   },
-  // 컴포넌트 메서드 정의
+  //컴포넌트에서 사용하는 메서드
   methods: {
     handleChildEvent1(arg) {
-      console.log("arg:", arg);
+      console.log("arg :", arg);
     },
     handleChildEvent2(arg1, arg2) {
-      console.log("arg1:", arg1);
-      console.log("arg2:", arg2);
+      console.log("arg1 :", arg1);
+      console.log("arg2 :", arg2);
     },
-    handleCounteeIncrement(value) {
+    handleCountIncrement(value) {
       this.counter += value;
     },
-    handleCounteeDecrement(value) {
+    handleCountDecrement(value) {
       this.counter -= value;
     },
   },

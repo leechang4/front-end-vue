@@ -5,27 +5,27 @@
       Child
     </div>
     <div class="card-body">
-      <p>data:{{ data }}</p>
+      <p>data: {{ data }}</p>
       <hr />
       <button class="btn btn-info btn-sm mr-2" @click="handleParentData">부모 데이터 읽기</button>
-      <button class="btn btn-info btn-sm mr-2" @click="handleParentMethod">부모 메소드 호출</button>
+      <button class="btn btn-info btn-sm mr-2" @click="handleParentMethod">부모 메서드 호출</button>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  // 컴포넌트의 대표이름(devtools에 나오는 이름)
+  //컴포넌트의 대표이름(devtools에 나오는 이름)
   name: "Child",
-  // 추가하고 싶은 컴포넌트를 등록 얘는 있어도 되고 없어도 됌
+  //추가하고 싶은 컴포넌트를 등록
   components: {},
-  // 컴포넌트에서 이용하는 데이터 정의
+  //컴포넌트에서 사용하는 데이터를 정의
   data() {
     return {
       data: "child-data",
     };
   },
-  // 컴포넌트 메서드 정의
+  //컴포넌트에서 사용하는 메서드
   methods: {
     childMethod() {
       console.log("childMethod() 실행");

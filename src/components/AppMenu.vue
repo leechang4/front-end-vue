@@ -8,14 +8,12 @@
     <li class="nav-item mt-2">
       <h6 class="text-white">Menu01: Routing</h6>
       <router-link to="/menu01/exam01view" class="nav-link text-warning"
-        >선언적 방식 화면 이동</router-link
+        >선언적 화면이동</router-link
       >
       <router-link to="/menu01/exam02view" class="nav-link text-warning"
-        >프로그래밍 방식 화면 이동</router-link
+        >프로그래밍 방식 화면이동</router-link
       >
-      <router-link to="/menu01/exam03view" class="nav-link text-warning">
-        중첩된 라우트</router-link
-      >
+      <router-link to="/menu01/exam03view" class="nav-link text-warning">중첩된 라우트</router-link>
       <router-link to="/menu01/exam04view" class="nav-link text-warning"
         >이름이 있는 뷰</router-link
       >
@@ -40,7 +38,7 @@
       <router-link to="/menu02/exam05forrepeatbinding" class="nav-link text-warning"
         >반복 바인딩</router-link
       >
-      <router-link to="/menu02/exam06computedbinding" class="nav-link text-warning"
+      <router-link to="/menu02/exam06fcomputedbinding" class="nav-link text-warning"
         >계산된 바인딩</router-link
       >
       <router-link to="/menu02/exam07template" class="nav-link text-warning"
@@ -76,6 +74,22 @@
       <router-link to="/menu05/exam01lifecyclehook" class="nav-link text-warning"
         >라이프사이클 훅</router-link
       >
+    </li>
+    <li class="nav-item mt-2">
+      <h6 class="text-white">Menu06: Vuex State Management</h6>
+      <router-link to="/menu06/exam01rootstate" class="nav-link text-warning"
+        >루트 상태 읽기 및 변경</router-link
+      >
+      <router-link to="/menu06/exam02counterstate" class="nav-link text-warning"
+        >하위 상태 읽기 및 변경</router-link
+      >
+    </li>
+    <li class="nav-item mt-2">
+      <h6 class="text-white">Menu07: Axios AJAX</h6>
+      <router-link to="/menu07/exam01asynccontrol" class="nav-link text-warning"
+        >비동기 작업 도중에 보여줄 스피너</router-link
+      >
+      <router-link to="/menu07/auth/jwtauth" class="nav-link text-warning">JWT 인증</router-link>
     </li>
   </ul>
 </template>

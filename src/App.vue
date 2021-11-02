@@ -25,8 +25,13 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppMenu from "./components/AppMenu.vue";
+
 export default {
   name: "App",
   components: { AppHeader, AppMenu },
+
+  created() {
+    this.$stroe.dispatch("loadAuth");
+  },
 };
 </script>
