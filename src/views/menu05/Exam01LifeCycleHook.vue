@@ -43,9 +43,11 @@ export default {
   beforeMount() {
     console.log("beforeMount state");
   },
+  //UI가 화면에 나온 상태
   mounted() {
     console.log("mounted state");
   },
+  //리렌더링이 발생하면 update
   beforeUpdate() {
     console.log("beforeUpdate state");
   },

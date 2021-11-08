@@ -6,29 +6,29 @@
     </div>
     <div class="card-body">
       <!-- submit 이벤트가 발생했을때 prevent (끄겠다) 하지만 handleSubmit를 실행하겠다. -->
-      <form v-on:submit.prevent="handleSubmit">
+      <form  v-on:submit.prevent="handleSubmit" >
         <div class="form-group row">
           <label class="col-sm-2 col-form-label">Name</label>
           <div class="col-sm-10">
-            <input type="text" class="from-control" v-model="product.name" />
+            <input type="text" class="from-control" v-model="product.name"/>
           </div>
         </div>
 
         <div class="form-group row">
           <label class="col-sm-2 col-form-label">Company</label>
           <div class="col-sm-10">
-            <input type="text" class="from-control" v-model="product.company" />
+            <input type="text" class="from-control" v-model="product.company"/>
           </div>
         </div>
 
         <div class="form-group row">
           <label class="col-sm-2 col-form-label">Price</label>
           <div class="col-sm-10">
-            <input type="number" class="from-control" v-model.number="product.price" />
+            <input type="number" class="from-control" v-model.number="product.price"/>
           </div>
         </div>
 
-        <div class="form-group row">
+         <div class="form-group row">
           <label class="col-sm-2 col-form-label">Info</label>
           <div class="col-sm-10">
             <textarea class="from-control" v-model="product.info"></textarea>
@@ -50,30 +50,15 @@
           <label class="col-sm-2 col-form-label">Colors</label>
           <div class="col-sm-10">
             <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                value="black"
-                v-model="product.colors"
-              />
+              <input type="checkbox" class="form-check-input" value="black" v-model="product.colors"/>
               <label class="form-check-label">black</label>
             </div>
             <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                value="white"
-                v-model="product.colors"
-              />
+              <input type="checkbox" class="form-check-input" value="white" v-model="product.colors"/>
               <label class="form-check-label">white</label>
             </div>
             <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                value="red"
-                v-model="product.colors"
-              />
+              <input type="checkbox" class="form-check-input" value="red" v-model="product.colors"/>
               <label class="form-check-label">red</label>
             </div>
           </div>
@@ -83,7 +68,7 @@
           <label class="col-sm-2 col-form-label">Sale1</label>
           <div class="col-sm-10">
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" v-model="product.sale1" />
+              <input type="checkbox" class="form-check-input" v-model="product.sale1"/>
               <label class="form-check-label">판매여부</label>
             </div>
           </div>
@@ -93,13 +78,8 @@
           <label class="col-sm-2 col-form-label">Sale2</label>
           <div class="col-sm-10">
             <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                v-model="product.sale2"
-                true-value="yes"
-                false-value="no"
-              />
+              <input type="checkbox" class="form-check-input" 
+                  v-model="product.sale2" true-value="yes" false-value="no"/>
               <label class="form-check-label">판매여부</label>
             </div>
           </div>
@@ -109,11 +89,11 @@
           <label class="col-sm-2 col-form-label">Sex</label>
           <div class="col-sm-10">
             <div class="form-check">
-              <input type="radio" class="form-check-input" v-model="product.sex" value="men" />
+              <input type="radio" class="form-check-input" v-model="product.sex" value="men"/>
               <label class="form-check-label">Men</label>
             </div>
             <div class="form-check">
-              <input type="radio" class="form-check-input" v-model="product.sex" value="women" />
+              <input type="radio" class="form-check-input" v-model="product.sex" value="women"/>
               <label class="form-check-label">Women</label>
             </div>
           </div>

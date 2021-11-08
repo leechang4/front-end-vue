@@ -9,20 +9,15 @@
       <form>
         <div class="form-group">
           <label>Email address</label>
-          <input
-            type="email"
-            class="form-control"
-            aria-describedby="emailHelp"
-            autocomplete="email"
-          />
+          <input type="email" class="form-control" aria-describedby="emailHelp" autocomplete="email"/>
           <small class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label>Password</label>
-          <input type="password" class="form-control" autocomplete="new-password" />
+          <input type="password" class="form-control" autocomplete="new-password"/>
         </div>
         <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" />
+          <input type="checkbox" class="form-check-input"/>
           <label class="form-check-label">Check me out</label>
         </div>
       </form>
@@ -38,20 +33,21 @@
 <script>
 import ModalDialogTemplate from "@/components/menu02/ModalDialogTemplate.vue";
 export default {
-  // 컴포넌트의 대표이름(devtools에 나오는 이름)
+  //컴포넌트의 대표이름(devtools에 나오는 이름)
   name: "DialogB",
-  // 추가하고 싶은 컴포넌트를 등록 얘는 있어도 되고 없어도 됌
+  //추가하고 싶은 컴포넌트를 등록
   components: {
     ModalDialogTemplate,
   },
-  // 컴포넌트에서 이용하는 데이터 정의
+  //컴포넌트에서 사용하는 데이터를 정의
   data() {
     return {};
   },
-  // 컴포넌트 메서드 정의
+  //컴포넌트에서 사용하는 메서드
   methods: {},
 };
 </script>
 
 <!-- 컴포넌트 스타일 정의 -->
-<style scoped></style>
+<style scoped>
+</style>

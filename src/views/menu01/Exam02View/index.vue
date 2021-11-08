@@ -8,9 +8,9 @@
       <sub-a-component class="mr-2" />
       <!-- 프로그램 방식 화면 이동 -->
       <button class="btn btn-info btn-sm mr-2" v-on:click="goUrl">/menu01/exam01view</button>
-      <button class="btn btn-info btn-sm" v-on:click="goUrl()">/menu01/exam01view</button>
-      <button class="btn btn-info btn-sm" @click="goUrl">/menu01/exam01view</button>
-      <button class="btn btn-info btn-sm" @click="goUrl()">/menu01/exam01view</button>
+      <button class="btn btn-info btn-sm mr-2" v-on:click="goUrl()">/menu01/exam01view</button>
+      <button class="btn btn-info btn-sm mr-2" @click="goUrl">/menu01/exam01view</button>
+      <button class="btn btn-info btn-sm mr-2" @click="goUrl()">/menu01/exam01view</button>
     </div>
   </div>
 </template>
@@ -29,7 +29,7 @@ export default {
   // 컴포넌트 메서드 정의
   methods: {
     goUrl() {
-      this.$router.push("/menu01/exam02view");
+      this.$router.push("/menu01/exam01view");
       //현재 URL과 동일한 URL로 화면 이동을 할 경우 예외가 발생하므로 예외 처리 코드 필요
       // this.$router.push("/menu01/exam02view").catch(() => {}); //라우터를 참조함 // push는 url // 실패가 되면 catch로 간다.
 
